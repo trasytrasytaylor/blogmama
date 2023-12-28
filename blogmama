@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript">
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog</title>
+<meta name="robots" content="max-image-preview:large" />
+<link rel="dns-prefetch" href="//app.clickfunnels.com" />
+<link rel="dns-prefetch" href="//secure.gravatar.com" />
+<link rel="dns-prefetch" href="//stats.wp.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//code.ionicframework.com" />
+<link rel="dns-prefetch" href="//v0.wordpress.com" />
+<link rel="alternate" type="application/rss+xml" title="Hands Free Mama &raquo; Feed" href="https://www.handsfreemama.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hands Free Mama &raquo; Comments Feed" href="https://www.handsfreemama.com/comments/feed/" />
+<link rel="canonical" href="https://www.handsfreemama.com/blog/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.handsfreemama.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="uberbox-css" href="https://www.handsfreemama.com/wp-content/plugins/uber-grid/vendor/uberbox/dist/uberbox.css?ver=2.1.2" type="text/css" media="all" />
+<link rel="stylesheet" id="jquery.magnific-popup-ubergrid-css" href="https://www.handsfreemama.com/wp-content/plugins/uber-grid/assets/css/magnific-popup.css?ver=2.1.2" type="text/css" media="all" />
+<link rel="stylesheet" id="uber-grid-css" href="https://www.handsfreemama.com/wp-content/plugins/uber-grid/assets/css/uber-grid.css?ver=2.1.2" type="text/css" media="all" />
+<link rel="stylesheet" id="sbi_styles-css" href="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2.6" type="text/css" media="all" />
+<link rel="stylesheet" id="market-theme-css" href="https://www.handsfreemama.com/wp-content/themes/restored316-market/style.css?ver=1.0.0" type="text/css" media="all" />
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.handsfreemama.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2" type="text/css" media="all" />
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="https://www.handsfreemama.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" type="text/css" media="all" />
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://www.handsfreemama.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.3.2" type="text/css" media="all" />
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="jpibfi-style-css" href="https://www.handsfreemama.com/wp-content/plugins/jquery-pin-it-button-for-images/css/client.css?ver=3.0.6" type="text/css" media="all" />
+<link rel="stylesheet" id="google-font-css" href="//fonts.googleapis.com/css?family=Montserrat%7CArimo%3A400%2C400italic%7CIM+Fell+English%3A400%2C400italic%7CEB+Garamond%7CBad+Script&#038;ver=6.3.2" type="text/css" media="all" />
+<link rel="stylesheet" id="ionicons-css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=CHILD_THEME_VERSION" type="text/css" media="all" />
+<link rel="stylesheet" id="simple-social-icons-font-css" href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/css/style.css?ver=3.0.2" type="text/css" media="all" />
+<link rel="stylesheet" id="social-logos-css" href="https://www.handsfreemama.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=12.7.1" type="text/css" media="all" />
+<link rel="stylesheet" id="jetpack_css-css" href="https://www.handsfreemama.com/wp-content/plugins/jetpack/css/jetpack.css?ver=12.7.1" type="text/css" media="all" />
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/uber-grid/assets/js/packery.pkgd.min.js?ver=2.1.2" id="packery-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-includes/js/backbone.min.js?ver=1.4.1" id="backbone-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/uber-grid/vendor/backbone.marionette.js?ver=2.4.0" id="marionette-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/uber-grid/vendor/uberbox/dist/templates.js?ver=2.1.2" id="uberbox-templates-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/uber-grid/vendor/uberbox/dist/uberbox.js?ver=2.1.2" id="uberbox-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/uber-grid/assets/js/jquery.magnific-popup.js?ver=2.1.2" id="jquery.magnific-popup-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/uber-grid/assets/js/uber-grid.js?ver=2.1.2" id="uber-grid-js"></script>
+<script type="text/javascript" id="breeze-prefetch-js-extra">
+/* <![CDATA[ */
+var breeze_prefetch = {"local_url":"https:\/\/www.handsfreemama.com","ignore_remote_prefetch":"1","ignore_list":["\/wp-admin\/"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/breeze/assets/js/js-front-end/breeze-prefetch-links.min.js?ver=2.0.32" id="breeze-prefetch-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/global.js?ver=1.0.0" id="global-script-js"></script>
+<link rel="https://api.w.org/" href="https://www.handsfreemama.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.handsfreemama.com/wp-json/wp/v2/pages/7179" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.handsfreemama.com/xmlrpc.php?rsd" />
+<link rel="alternate" type="application/json+oembed" href="https://www.handsfreemama.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.handsfreemama.com%2Fblog%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.handsfreemama.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.handsfreemama.com%2Fblog%2F&#038;format=xml" />
+
+<link rel="stylesheet" id="gtcn-plugin-css" href="https://www.handsfreemama.com/wp-content/plugins/gregs-threaded-comment-numbering/gtcn-css.css?ver=1.5.8" type="text/css" media="all" />
+
+<style type="text/css">
+	a.pinit-button.custom span {
+	background-image: url("https://www.handsfreemama.com/wp-content/uploads/2013/11/pinterest.png");	}
+
+	.pinit-hover {
+		opacity: 0.5 !important;
+		filter: alpha(opacity=50) !important;
+	}
+	a.pinit-button {
+	border-bottom: 0 !important;
+	box-shadow: none !important;
+	margin-bottom: 0 !important;
+}
+a.pinit-button::after {
+    display: none;
+}</style>
+<style>img#wpstats{display:none}</style>
+<link rel="pingback" href="https://www.handsfreemama.com/xmlrpc.php" />
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1954199044906924');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1954199044906924&ev=PageView&noscript=1"
+/></noscript>
+
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '554695734678903');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=554695734678903&ev=PageView&noscript=1"
+/></noscript>
+<style type="text/css">.site-title a { background: url(https://www.handsfreemama.com/wp-content/uploads/2016/12/logo.png) no-repeat !important; }</style>
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Blog" />
+<meta property="og:url" content="https://www.handsfreemama.com/blog/" />
+<meta property="og:description" content="Visit the post for more." />
+<meta property="article:published_time" content="2016-12-28T22:17:21+00:00" />
+<meta property="article:modified_time" content="2016-12-28T22:17:21+00:00" />
+<meta property="og:site_name" content="Hands Free Mama" />
+<meta property="og:image" content="https://www.handsfreemama.com/wp-content/uploads/2016/12/cropped-site-icon.png" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta property="og:image:alt" content />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:text:title" content="Blog" />
+<meta name="twitter:image" content="https://www.handsfreemama.com/wp-content/uploads/2016/12/cropped-site-icon-270x270.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Visit the post for more." />
+
+<link rel="icon" href="https://www.handsfreemama.com/wp-content/uploads/2016/12/cropped-site-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.handsfreemama.com/wp-content/uploads/2016/12/cropped-site-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.handsfreemama.com/wp-content/uploads/2016/12/cropped-site-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.handsfreemama.com/wp-content/uploads/2016/12/cropped-site-icon-270x270.png" />
+<style type="text/css" id="wp-custom-css">body {
+	color: #000;
+	
+}
+
+img { max-width:100% !important; height:auto !important;}
+
+@media only screen and (max-width: 1415px) {
+	
+section#text-17 {
+    max-width: 40%;
+    margin-top: 30px;
+   
+}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	
+section#text-17 {
+    max-width: 100%;
+    margin-top: 10px;
+   
+}
+	
+	section#text-18 {
+    float: left;
+    margin-top: 10px;
+   
+}
+	
+}</style></head>
+<body class="page-template page-template-page_blog page-template-page_blog-php page page-id-7179 custom-header header-image content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible market-archive" itemscope itemtype="https://schema.org/WebPage"><div class="site-container"><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="https://www.handsfreemama.com/">Hands Free Mama</a></p><p class="site-description" itemprop="description">Letting Go...To Grasp What Really Matters</p></div><div class="widget-area header-widget-area"><section id="text-15" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><img src="https://www.handsfreemama.com/wp-content/uploads/2016/12/tagline.png"></div>
+</div></section>
+<section id="simple-social-icons-3" class="widget simple-social-icons"><div class="widget-wrap"><ul class="alignright"><li class="ssi-email"><a href="https://www.handsfreemama.com/contact/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-email" aria-labelledby="social-email-3"><title id="social-email-3">Email</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-email"></use></svg></a></li><li class="ssi-facebook"><a href="https://www.facebook.com/TheHandsFreeRevolution" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-facebook" aria-labelledby="social-facebook-3"><title id="social-facebook-3">Facebook</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-facebook"></use></svg></a></li><li class="ssi-instagram"><a href="https://www.instagram.com/handsfreerevolution/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-instagram" aria-labelledby="social-instagram-3"><title id="social-instagram-3">Instagram</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-instagram"></use></svg></a></li><li class="ssi-pinterest"><a href="https://www.pinterest.com/handsfreemama/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-pinterest" aria-labelledby="social-pinterest-3"><title id="social-pinterest-3">Pinterest</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-pinterest"></use></svg></a></li><li class="ssi-rss"><a href="http://feeds.feedburner.com/handsfreemama" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-rss" aria-labelledby="social-rss-3"><title id="social-rss-3">RSS</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-rss"></use></svg></a></li><li class="ssi-twitter"><a href="https://twitter.com/handsfreemama" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-twitter" aria-labelledby="social-twitter-3"><title id="social-twitter-3">Twitter</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-twitter"></use></svg></a></li></ul></div></section>
+</div></div></header><nav class="nav-secondary" aria-label="Secondary" itemscope itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul id="menu-hfm_menu" class="menu genesis-nav-menu menu-secondary"><li id="menu-item-7187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7187"><a href="https://www.handsfreemama.com/about-me/" itemprop="url"><span itemprop="name">Rachel</span></a></li>
+<li id="menu-item-7194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7194"><a href="https://www.handsfreemama.com/books/" itemprop="url"><span itemprop="name">Books/Audio</span></a></li>
+<li id="menu-item-7188" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7179 current_page_item menu-item-7188"><a href="https://www.handsfreemama.com/blog/" aria-current="page" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-5823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5823"><a href="https://www.handsfreemama.com/events/" itemprop="url"><span itemprop="name">Speaking Events</span></a></li>
+<li id="menu-item-5822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5822"><a href="https://www.handsfreemama.com/video-press/" itemprop="url"><span itemprop="name">Video &#038; Press</span></a></li>
+<li id="menu-item-7169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7169"><a href="https://www.handsfreemama.com/best-of-hfm/" itemprop="url"><span itemprop="name">Best of HFM</span></a></li>
+<li id="menu-item-7186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7186"><a href="https://www.handsfreemama.com/contact/" itemprop="url"><span itemprop="name">Connect</span></a></li>
+<li class="right search"><form class="search-form" method="get" action="https://www.handsfreemama.com/" role="search" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction"><input class="search-form-input" type="search" name="s" id="searchform-1" placeholder="Search..." itemprop="query-input"><input class="search-form-submit" type="submit" value="Search"><meta content="https://www.handsfreemama.com/?s={s}" itemprop="target"></form></li></ul></div></nav><div class="widget-above-content widget-area"><div class="wrap"><section id="enews-ext-2" class="widget enews-widget"><div class="widget-wrap"><div class="enews enews-3-fields"><p>Subscribe via email to get Rachel's posts in your inbox!</p>
+<form id="subscribeenews-ext-2" class="enews-form" action="https://app.convertkit.com/landing_pages/243393/subscribe.html" method="post" target="_blank" name="enews-ext-2">
+<input type="text" id="subbox1" class="enews-subbox enews-fname" value aria-label="First Name..." placeholder="First Name..." name="First" /> <input type="text" id="subbox2" class="enews-subbox enews-lname" value aria-label="Last Name..." placeholder="Last Name..." name="Last" /> <input type="email" value id="subbox" class="enews-email" aria-label="Enter your email address..." placeholder="Enter your email address..." name="email" required="required" />
+<input type="submit" value="Go" id="subbutton" class="enews-submit" />
+</form>
+</div></div></section>
+</div></div><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><article class="post-9762 post type-post status-publish format-standard has-post-thumbnail category-being-present category-courage category-dealing-with-change category-human-connection category-human-needs category-new-year-hopes entry" aria-label="Insights Found in Tupperware Bowls and Survey Boxes May Influence Your Holidays" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><div class="home-featured-image"><a href="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/"><img width="820" height="500" src="https://www.handsfreemama.com/wp-content/uploads/2023/12/IMG_7577-820x500.jpg" class="aligncenter" alt decoding="async" loading="lazy" /></a></div><p class="entry-meta"><span class="entry-categories">in <a href="https://www.handsfreemama.com/Topics/being-present/" rel="category tag">being present</a>&middot <a href="https://www.handsfreemama.com/Topics/courage/" rel="category tag">courage</a>&middot <a href="https://www.handsfreemama.com/Topics/dealing-with-change/" rel="category tag">dealing with change</a>&middot <a href="https://www.handsfreemama.com/Topics/human-connection/" rel="category tag">human connection</a>&middot <a href="https://www.handsfreemama.com/Topics/human-needs/" rel="category tag">human needs</a>&middot <a href="https://www.handsfreemama.com/Topics/new-year-hopes/" rel="category tag">new year hopes</a></span></p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/">Insights Found in Tupperware Bowls and Survey Boxes May Influence Your Holidays</a></h2>
+</header><div class="entry-content" itemprop="text"><input class="jpibfi" type="hidden"><p>For Thanksgiving dinner 2022, I made conversation cards to use during our sit-down meal. Some might find that strange or unnecessary, but when a family goes through a traumatic event, the aftereffects can make holiday rituals, including dinner conversation, difficult. Never had an old Tupperware dish filled with scraps of paper held so much value. Based on my family’s response&#8230; <br/><a class="more-link" href="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/">Read More</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/" data-layout="button_count"></div></li><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/" data-text="Insights Found in Tupperware Bowls and Survey Boxes May Influence Your Holidays">Tweet</a></li><li class="share-pinterest"><div class="pinterest_button"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.handsfreemama.com%2F2023%2F12%2F14%2Finsights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays%2F&#038;media=https%3A%2F%2Fwww.handsfreemama.com%2Fwp-content%2Fuploads%2F2023%2F12%2FIMG_7577-scaled.jpg&#038;description=Insights%20Found%20in%20Tupperware%20Bowls%20and%20Survey%20Boxes%20May%20Influence%20Your%20Holidays" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></div></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared class="share-email sd-button" href="/cdn-cgi/l/email-protection#457a3630272f20263178607007162d24372021607775152a36316070016077750c2b362c222d3136607775032a302b216077752c2b60777511303535203732243720607775072a322936607775242b2160777516303733203c607775072a3d203660777508243c6077750c2b232930202b26206077751c2a30376077750d2a292c21243c3663272a213c782d313135366076046077036077033232326b2d242b213623372020282428246b262a2860770377757776607703747760770374716077032c2b362c222d313668232a302b21682c2b683130353520373224372068272a32293668242b216836303733203c68272a3d20366828243c682c2b232930202b2620683c2a3037682d2a292c21243c3660770363362d243720782028242c29" target="_blank" title="Click to email a link to a friend" data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="dfbe0b601d" data-email-share-track-url="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/?share=email"><span>Email</span></a></li><li class="share-linkedin"><div class="linkedin_button"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="in/share" data-url="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/" data-counter="right"></script></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="Insights Found in Tupperware Bowls and Survey Boxes May Influence Your Holidays" data-content="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/" title="Share on Tumblr" data-posttype="link">Share on Tumblr</a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared class="share-print sd-button" href="https://www.handsfreemama.com/2023/12/14/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></article><article class="post-9738 post type-post status-publish format-standard has-post-thumbnail category-what-i-would-have-missed entry" aria-label="If You&#8217;ve Got a Cherished Dream Shoved in a Drawer, Please Give it Fresh Air" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><div class="home-featured-image"><a href="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/"><img width="400" height="400" src="https://www.handsfreemama.com/wp-content/uploads/2023/11/DSC_0045-400x400.jpg" class="alignleft" alt decoding="async" loading="lazy" srcset="https://www.handsfreemama.com/wp-content/uploads/2023/11/DSC_0045-400x400.jpg 400w, https://www.handsfreemama.com/wp-content/uploads/2023/11/DSC_0045-150x150.jpg 150w, https://www.handsfreemama.com/wp-content/uploads/2023/11/DSC_0045-160x160.jpg 160w, https://www.handsfreemama.com/wp-content/uploads/2023/11/DSC_0045-320x320.jpg 320w, https://www.handsfreemama.com/wp-content/uploads/2023/11/DSC_0045-500x500.jpg 500w" sizes="(max-width: 400px) 100vw, 400px" /></a></div><p class="entry-meta"><span class="entry-categories">in <a href="https://www.handsfreemama.com/Topics/what-i-would-have-missed/" rel="category tag">What I Would Have Missed</a></span></p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/">If You&#8217;ve Got a Cherished Dream Shoved in a Drawer, Please Give it Fresh Air</a></h2>
+</header><div class="entry-content" itemprop="text"><input class="jpibfi" type="hidden"><p>I never know which question I pose at my Soul Shift retreat will be The One – the one that sparks someone to voice a vulnerable truth, which then sparks more sharing, which then culminates to an anthem of brave voices and ideas. At my most recent retreat, the question was: “If money were no object, what would you do&#8230; <br/><a class="more-link" href="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/">Read More</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/" data-layout="button_count"></div></li><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/" data-text="If You&#039;ve Got a Cherished Dream Shoved in a Drawer, Please Give it Fresh Air">Tweet</a></li><li class="share-pinterest"><div class="pinterest_button"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.handsfreemama.com%2F2023%2F11%2F16%2Fif-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air%2F&#038;media=https%3A%2F%2Fwww.handsfreemama.com%2Fwp-content%2Fuploads%2F2023%2F11%2FDSC_0045.jpg&#038;description=If%20You%27ve%20Got%20a%20Cherished%20Dream%20Shoved%20in%20a%20Drawer%2C%20Please%20Give%20it%20Fresh%20Air" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></div></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared class="share-email sd-button" href="/cdn-cgi/l/email-protection#08377b7d6a626d6b7c352d3d4a5b60697a6d6c2d3a3858677b7c2d3d4c2d3a38416e2d3a3851677d2d3a3f7e6d2d3a384f677c2d3a38692d3a384b606d7a617b606d6c2d3a384c7a6d69652d3a385b60677e6d6c2d3a3861662d3a38692d3a384c7a697f6d7a2d3a4b2d3a3858646d697b6d2d3a384f617e6d2d3a38617c2d3a384e7a6d7b602d3a3849617a2e6a676c7135607c7c787b2d3b492d3a4e2d3a4e7f7f7f266069666c7b6e7a6d6d65696569266b67652d3a4e3a383a3b2d3a4e39392d3a4e393e2d3a4e616e2571677d7e6d256f677c2569256b606d7a617b606d6c256c7a6d6965257b60677e6d6c2561662569256c7a697f6d7a2578646d697b6d256f617e6d25617c256e7a6d7b602569617a2d3a4e2e7b60697a6d356d65696164" target="_blank" title="Click to email a link to a friend" data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="1a0801544e" data-email-share-track-url="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/?share=email"><span>Email</span></a></li><li class="share-linkedin"><div class="linkedin_button"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="in/share" data-url="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/" data-counter="right"></script></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="If You've Got a Cherished Dream Shoved in a Drawer, Please Give it Fresh Air" data-content="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/" title="Share on Tumblr" data-posttype="link">Share on Tumblr</a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared class="share-print sd-button" href="https://www.handsfreemama.com/2023/11/16/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></article><article class="post-9726 post type-post status-publish format-standard has-post-thumbnail category-compassion category-courage category-emotional-wellbeing category-healing category-human-connection category-human-needs category-self-forgiveness category-self-love category-self-perception category-soul-shift category-teen-wellness category-what-i-would-have-missed entry" aria-label="Toxic Regret: When Signs Point to Finally Forgiving Yourself" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><div class="home-featured-image"><a href="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/"><img width="400" height="400" src="https://www.handsfreemama.com/wp-content/uploads/2023/10/DSC_0261-400x400.jpg" class="alignleft" alt decoding="async" loading="lazy" srcset="https://www.handsfreemama.com/wp-content/uploads/2023/10/DSC_0261-400x400.jpg 400w, https://www.handsfreemama.com/wp-content/uploads/2023/10/DSC_0261-150x150.jpg 150w, https://www.handsfreemama.com/wp-content/uploads/2023/10/DSC_0261-160x160.jpg 160w, https://www.handsfreemama.com/wp-content/uploads/2023/10/DSC_0261-320x320.jpg 320w, https://www.handsfreemama.com/wp-content/uploads/2023/10/DSC_0261-500x500.jpg 500w" sizes="(max-width: 400px) 100vw, 400px" /></a></div><p class="entry-meta"><span class="entry-categories">in <a href="https://www.handsfreemama.com/Topics/compassion/" rel="category tag">compassion</a>&middot <a href="https://www.handsfreemama.com/Topics/courage/" rel="category tag">courage</a>&middot <a href="https://www.handsfreemama.com/Topics/emotional-wellbeing/" rel="category tag">emotional wellbeing</a>&middot <a href="https://www.handsfreemama.com/Topics/healing/" rel="category tag">healing</a>&middot <a href="https://www.handsfreemama.com/Topics/human-connection/" rel="category tag">human connection</a>&middot <a href="https://www.handsfreemama.com/Topics/human-needs/" rel="category tag">human needs</a>&middot <a href="https://www.handsfreemama.com/Topics/self-forgiveness/" rel="category tag">self-forgiveness</a>&middot <a href="https://www.handsfreemama.com/Topics/self-love/" rel="category tag">self-love</a>&middot <a href="https://www.handsfreemama.com/Topics/self-perception/" rel="category tag">self-perception</a>&middot <a href="https://www.handsfreemama.com/Topics/soul-shift/" rel="category tag">Soul Shift</a>&middot <a href="https://www.handsfreemama.com/Topics/teen-wellness/" rel="category tag">teen wellness</a>&middot <a href="https://www.handsfreemama.com/Topics/what-i-would-have-missed/" rel="category tag">What I Would Have Missed</a></span></p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/">Toxic Regret: When Signs Point to Finally Forgiving Yourself</a></h2>
+</header><div class="entry-content" itemprop="text"><input class="jpibfi" type="hidden"><p>Our hydrangea bush that was dormant for three years decided to produce one bloom this fall. It started out as a potted plant that was gifted to us in honor of Scott’s father, Ben, who passed away shortly after a cancer diagnosis. My family planted it in the fertile soil next to our house in the Spring of 2017. For&#8230; <br/><a class="more-link" href="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/">Read More</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/" data-layout="button_count"></div></li><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/" data-text="Toxic Regret: When Signs Point to Finally Forgiving Yourself">Tweet</a></li><li class="share-pinterest"><div class="pinterest_button"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.handsfreemama.com%2F2023%2F10%2F20%2Ftoxic-regret-when-signs-point-to-finally-forgiving-yourself%2F&#038;media=https%3A%2F%2Fwww.handsfreemama.com%2Fwp-content%2Fuploads%2F2023%2F10%2FDSC_0261.jpg&#038;description=Toxic%20Regret%3A%20When%20Signs%20Point%20to%20Finally%20Forgiving%20Yourself" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></div></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared class="share-email sd-button" href="/cdn-cgi/l/email-protection#17286462757d7274632a322255447f766572733225274778646332225332252743786f7e74322527457270657263322456322527407f7279322527447e70796432252747787e79633225276378322527517e79767b7b6e322527517865707e617e79703225274e78626564727b71317578736e2a7f63636764322456322551322551606060397f76797364716572727a767a763974787a322551252725243225512627322551252732255163786f7e743a6572706572633a607f72793a647e7079643a67787e79633a63783a717e79767b7b6e3a717865707e617e79703a6e78626564727b7132255131647f7665722a727a767e7b" target="_blank" title="Click to email a link to a friend" data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="1e3f627a20" data-email-share-track-url="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/?share=email"><span>Email</span></a></li><li class="share-linkedin"><div class="linkedin_button"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="in/share" data-url="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/" data-counter="right"></script></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="Toxic Regret: When Signs Point to Finally Forgiving Yourself" data-content="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/" title="Share on Tumblr" data-posttype="link">Share on Tumblr</a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared class="share-print sd-button" href="https://www.handsfreemama.com/2023/10/20/toxic-regret-when-signs-point-to-finally-forgiving-yourself/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></article><article class="post-9717 post type-post status-publish format-standard has-post-thumbnail category-being-present category-conscious-parenting category-dealing-with-change category-emotional-wellbeing category-finding-joy category-healing category-human-connection category-human-needs category-intentional-living category-mental-health category-relationships category-self-acceptance category-self-forgiveness category-self-love entry" aria-label="A Simple Art Project That Improves Your Inner World (No Artistic Skills Required)" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><div class="home-featured-image"><a href="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/"><img width="400" height="400" src="https://www.handsfreemama.com/wp-content/uploads/2023/09/IMG_8982-400x400.jpeg" class="alignleft" alt decoding="async" loading="lazy" srcset="https://www.handsfreemama.com/wp-content/uploads/2023/09/IMG_8982-400x400.jpeg 400w, https://www.handsfreemama.com/wp-content/uploads/2023/09/IMG_8982-150x150.jpeg 150w, https://www.handsfreemama.com/wp-content/uploads/2023/09/IMG_8982-160x160.jpeg 160w, https://www.handsfreemama.com/wp-content/uploads/2023/09/IMG_8982-320x320.jpeg 320w, https://www.handsfreemama.com/wp-content/uploads/2023/09/IMG_8982-500x500.jpeg 500w" sizes="(max-width: 400px) 100vw, 400px" /></a></div><p class="entry-meta"><span class="entry-categories">in <a href="https://www.handsfreemama.com/Topics/being-present/" rel="category tag">being present</a>&middot <a href="https://www.handsfreemama.com/Topics/conscious-parenting/" rel="category tag">conscious parenting</a>&middot <a href="https://www.handsfreemama.com/Topics/dealing-with-change/" rel="category tag">dealing with change</a>&middot <a href="https://www.handsfreemama.com/Topics/emotional-wellbeing/" rel="category tag">emotional wellbeing</a>&middot <a href="https://www.handsfreemama.com/Topics/finding-joy/" rel="category tag">finding joy</a>&middot <a href="https://www.handsfreemama.com/Topics/healing/" rel="category tag">healing</a>&middot <a href="https://www.handsfreemama.com/Topics/human-connection/" rel="category tag">human connection</a>&middot <a href="https://www.handsfreemama.com/Topics/human-needs/" rel="category tag">human needs</a>&middot <a href="https://www.handsfreemama.com/Topics/intentional-living/" rel="category tag">intentional living</a>&middot <a href="https://www.handsfreemama.com/Topics/mental-health/" rel="category tag">mental health</a>&middot <a href="https://www.handsfreemama.com/Topics/relationships/" rel="category tag">relationships</a>&middot <a href="https://www.handsfreemama.com/Topics/self-acceptance/" rel="category tag">self-acceptance</a>&middot <a href="https://www.handsfreemama.com/Topics/self-forgiveness/" rel="category tag">self-forgiveness</a>&middot <a href="https://www.handsfreemama.com/Topics/self-love/" rel="category tag">self-love</a></span></p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/">A Simple Art Project That Improves Your Inner World (No Artistic Skills Required)</a></h2>
+</header><div class="entry-content" itemprop="text"><input class="jpibfi" type="hidden"><p>I love being with my niece Kate. It’s not just about her being a joy to be around – it’s also about what happens to ME when I am around HER. When I am with Kate, I give myself a rare permission to be free. Free from rulesFree from expectationsFree from pressure to be productive Free to relaxFree to try&#8230; <br/><a class="more-link" href="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/">Read More</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/" data-layout="button_count"></div></li><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/" data-text="A Simple Art Project That Improves Your Inner World (No Artistic Skills Required)">Tweet</a></li><li class="share-pinterest"><div class="pinterest_button"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.handsfreemama.com%2F2023%2F09%2F08%2Fa-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required%2F&#038;media=https%3A%2F%2Fwww.handsfreemama.com%2Fwp-content%2Fuploads%2F2023%2F09%2FIMG_8982-scaled.jpeg&#038;description=A%20Simple%20Art%20Project%20That%20Improves%20Your%20Inner%20World%20%28No%20Artistic%20Skills%20Required%29" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></div></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared class="share-email sd-button" href="/cdn-cgi/l/email-protection#f5ca8680979f909681c8d0c0b7a69d94879091d0c7c5a59a8681d0c0b1d0c7c5b4d0c7c5a69c98859990d0c7c5b48781d0c7c5a5879a9f909681d0c7c5a19d9481d0c7c5bc9885879a839086d0c7c5ac9a8087d0c7c5bc9b9b9087d0c7c5a29a879991d0c7c5d0c7cdbb9ad0c7c5b487819c86819c96d0c7c5a69e9c999986d0c7c5a79084809c879091d0c7ccd3979a918cc89d81818586d0c6b4d0c7b3d0c7b3828282db9d949b91869387909098949894db969a98d0c7b3c7c5c7c6d0c7b3c5ccd0c7b3c5cdd0c7b394d8869c98859990d8948781d885879a9f909681d8819d9481d89c9885879a839086d88c9a8087d89c9b9b9087d8829a879991d89b9ad89487819c86819c96d8869e9c999986d8879084809c879091d0c7b3d3869d948790c89098949c99" target="_blank" title="Click to email a link to a friend" data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="70cd941bae" data-email-share-track-url="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/?share=email"><span>Email</span></a></li><li class="share-linkedin"><div class="linkedin_button"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="in/share" data-url="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/" data-counter="right"></script></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="A Simple Art Project That Improves Your Inner World (No Artistic Skills Required)" data-content="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/" title="Share on Tumblr" data-posttype="link">Share on Tumblr</a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared class="share-print sd-button" href="https://www.handsfreemama.com/2023/09/08/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></article><article class="post-9683 post type-post status-publish format-standard has-post-thumbnail category-being-present category-courage category-finding-joy category-human-connection category-human-needs category-mental-health category-overcoming-fear category-what-i-would-have-missed entry" aria-label="I Hope You Feel Small: The Surprising Upside of Unselfing" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><div class="home-featured-image"><a href="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/"><img width="400" height="400" src="https://www.handsfreemama.com/wp-content/uploads/2023/08/8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c-400x400.jpeg" class="alignleft" alt decoding="async" loading="lazy" srcset="https://www.handsfreemama.com/wp-content/uploads/2023/08/8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c-400x400.jpeg 400w, https://www.handsfreemama.com/wp-content/uploads/2023/08/8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c-150x150.jpeg 150w, https://www.handsfreemama.com/wp-content/uploads/2023/08/8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c-160x160.jpeg 160w, https://www.handsfreemama.com/wp-content/uploads/2023/08/8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c-320x320.jpeg 320w, https://www.handsfreemama.com/wp-content/uploads/2023/08/8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c-500x500.jpeg 500w" sizes="(max-width: 400px) 100vw, 400px" /></a></div><p class="entry-meta"><span class="entry-categories">in <a href="https://www.handsfreemama.com/Topics/being-present/" rel="category tag">being present</a>&middot <a href="https://www.handsfreemama.com/Topics/courage/" rel="category tag">courage</a>&middot <a href="https://www.handsfreemama.com/Topics/finding-joy/" rel="category tag">finding joy</a>&middot <a href="https://www.handsfreemama.com/Topics/human-connection/" rel="category tag">human connection</a>&middot <a href="https://www.handsfreemama.com/Topics/human-needs/" rel="category tag">human needs</a>&middot <a href="https://www.handsfreemama.com/Topics/mental-health/" rel="category tag">mental health</a>&middot <a href="https://www.handsfreemama.com/Topics/overcoming-fear/" rel="category tag">Overcoming fear</a>&middot <a href="https://www.handsfreemama.com/Topics/what-i-would-have-missed/" rel="category tag">What I Would Have Missed</a></span></p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/">I Hope You Feel Small: The Surprising Upside of Unselfing</a></h2>
+</header><div class="entry-content" itemprop="text"><input class="jpibfi" type="hidden"><p>Exactly one year ago, I came across a greeting card that struck me in a way no card ever has. There was no text, just a colorful, hand-drawn sketch of a square house with a chimney. The house was nestled on a hilltop that could be reached by a long, winding drive. A hot-air balloon happily drifted in the blue&#8230; <br/><a class="more-link" href="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/">Read More</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/" data-layout="button_count"></div></li><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/" data-text="I Hope You Feel Small: The Surprising Upside of Unselfing">Tweet</a></li><li class="share-pinterest"><div class="pinterest_button"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.handsfreemama.com%2F2023%2F08%2F25%2Fi-hope-you-feel-small-the-surprising-upside-of-unselfing%2F&#038;media=https%3A%2F%2Fwww.handsfreemama.com%2Fwp-content%2Fuploads%2F2023%2F08%2F8D7E073D-1A55-42FF-BAB6-18042BDF641F_1_105_c.jpeg&#038;description=I%20Hope%20You%20Feel%20Small%3A%20The%20Surprising%20Upside%20of%20Unselfing" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></div></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared class="share-email sd-button" href="/cdn-cgi/l/email-protection#d6e9a5a3b4bcb3b5a2ebf3e39485beb7a4b3b2f3e4e686b9a5a2f3e392f3e4e69ff3e4e69eb9a6b3f3e4e68fb9a3f3e4e690b3b3baf3e4e685bbb7babaf3e597f3e4e682beb3f3e4e685a3a4a6a4bfa5bfb8b1f3e4e683a6a5bfb2b3f3e4e6b9b0f3e4e683b8a5b3bab0bfb8b1f0b4b9b2afebbea2a2a6a5f3e597f3e490f3e490a1a1a1f8beb7b8b2a5b0a4b3b3bbb7bbb7f8b5b9bbf3e490e4e6e4e5f3e490e6eef3e490e4e3f3e490bffbbeb9a6b3fbafb9a3fbb0b3b3bafba5bbb7babafba2beb3fba5a3a4a6a4bfa5bfb8b1fba3a6a5bfb2b3fbb9b0fba3b8a5b3bab0bfb8b1f3e490f0a5beb7a4b3ebb3bbb7bfba" target="_blank" title="Click to email a link to a friend" data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="b82a407fd1" data-email-share-track-url="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/?share=email"><span>Email</span></a></li><li class="share-linkedin"><div class="linkedin_button"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="in/share" data-url="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/" data-counter="right"></script></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="I Hope You Feel Small: The Surprising Upside of Unselfing" data-content="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/" title="Share on Tumblr" data-posttype="link">Share on Tumblr</a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared class="share-print sd-button" href="https://www.handsfreemama.com/2023/08/25/i-hope-you-feel-small-the-surprising-upside-of-unselfing/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></article><article class="post-9665 post type-post status-publish format-standard has-post-thumbnail category-conscious-parenting category-dealing-with-change category-emotional-wellbeing category-finding-joy category-healing category-human-needs category-living-authentically category-raising-teens category-unconditional-love entry" aria-label="How a &#8216;Wonder Window&#8217; Became My Calm After the Storm" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><div class="home-featured-image"><a href="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/"><img width="400" height="400" src="https://www.handsfreemama.com/wp-content/uploads/2023/08/DSC_0161-400x400.jpg" class="alignleft" alt decoding="async" loading="lazy" srcset="https://www.handsfreemama.com/wp-content/uploads/2023/08/DSC_0161-400x400.jpg 400w, https://www.handsfreemama.com/wp-content/uploads/2023/08/DSC_0161-150x150.jpg 150w, https://www.handsfreemama.com/wp-content/uploads/2023/08/DSC_0161-160x160.jpg 160w, https://www.handsfreemama.com/wp-content/uploads/2023/08/DSC_0161-320x320.jpg 320w, https://www.handsfreemama.com/wp-content/uploads/2023/08/DSC_0161-500x500.jpg 500w" sizes="(max-width: 400px) 100vw, 400px" /></a></div><p class="entry-meta"><span class="entry-categories">in <a href="https://www.handsfreemama.com/Topics/conscious-parenting/" rel="category tag">conscious parenting</a>&middot <a href="https://www.handsfreemama.com/Topics/dealing-with-change/" rel="category tag">dealing with change</a>&middot <a href="https://www.handsfreemama.com/Topics/emotional-wellbeing/" rel="category tag">emotional wellbeing</a>&middot <a href="https://www.handsfreemama.com/Topics/finding-joy/" rel="category tag">finding joy</a>&middot <a href="https://www.handsfreemama.com/Topics/healing/" rel="category tag">healing</a>&middot <a href="https://www.handsfreemama.com/Topics/human-needs/" rel="category tag">human needs</a>&middot <a href="https://www.handsfreemama.com/Topics/living-authentically/" rel="category tag">living authentically</a>&middot <a href="https://www.handsfreemama.com/Topics/raising-teens/" rel="category tag">raising teens</a>&middot <a href="https://www.handsfreemama.com/Topics/unconditional-love/" rel="category tag">unconditional love</a></span></p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/">How a &#8216;Wonder Window&#8217; Became My Calm After the Storm</a></h2>
+</header><div class="entry-content" itemprop="text"><input class="jpibfi" type="hidden"><p>About the time my older daughter returned home from her year away at college, a Mourning Dove moved in. Well, actually it was two, a male and female, but it took me seeing them together in the nest to figure that out. The pair built their nest on top of a pillar underneath my front porch. Through my front window,&#8230; <br/><a class="more-link" href="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/">Read More</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><div class="fb-share-button" data-href="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/" data-layout="button_count"></div></li><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/" data-text="How a &#039;Wonder Window&#039; Became My Calm After the Storm">Tweet</a></li><li class="share-pinterest"><div class="pinterest_button"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.handsfreemama.com%2F2023%2F08%2F04%2Fhow-a-wonder-window-became-my-calm-after-the-storm%2F&#038;media=https%3A%2F%2Fwww.handsfreemama.com%2Fwp-content%2Fuploads%2F2023%2F08%2FDSC_0161.jpg&#038;description=How%20a%20%27Wonder%20Window%27%20Became%20My%20Calm%20After%20the%20Storm" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></div></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared class="share-email sd-button" href="/cdn-cgi/l/email-protection#90afe3e5f2faf5f3e4adb5a5d2c3f8f1e2f5f4b5a2a0c0ffe3e4b5a5d4b5a2a0d8ffe7b5a2a0f1b5a2a0b5a2a7c7fffef4f5e2b5a2a0c7f9fef4ffe7b5a2a7b5a2a0d2f5f3f1fdf5b5a2a0dde9b5a2a0d3f1fcfdb5a2a0d1f6e4f5e2b5a2a0e4f8f5b5a2a0c3e4ffe2fdb6f2fff4e9adf8e4e4e0e3b5a3d1b5a2d6b5a2d6e7e7e7bef8f1fef4e3f6e2f5f5fdf1fdf1bef3fffdb5a2d6a2a0a2a3b5a2d6a0a8b5a2d6a0a4b5a2d6f8ffe7bdf1bde7fffef4f5e2bde7f9fef4ffe7bdf2f5f3f1fdf5bdfde9bdf3f1fcfdbdf1f6e4f5e2bde4f8f5bde3e4ffe2fdb5a2d6b6e3f8f1e2f5adf5fdf1f9fc" target="_blank" title="Click to email a link to a friend" data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="f9c6b26036" data-email-share-track-url="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/?share=email"><span>Email</span></a></li><li class="share-linkedin"><div class="linkedin_button"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="in/share" data-url="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/" data-counter="right"></script></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="How a 'Wonder Window' Became My Calm After the Storm" data-content="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/" title="Share on Tumblr" data-posttype="link">Share on Tumblr</a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared class="share-print sd-button" href="https://www.handsfreemama.com/2023/08/04/how-a-wonder-window-became-my-calm-after-the-storm/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div></div></article><div class="archive-pagination pagination"><ul><li class="active"><a href="https://www.handsfreemama.com/blog/" aria-label="Current page" aria-current="page">1</a></li>
+<li><a href="https://www.handsfreemama.com/blog/page/2/">2</a></li>
+<li><a href="https://www.handsfreemama.com/blog/page/3/">3</a></li>
+<li class="pagination-omission">&#x02026;</li>
+<li><a href="https://www.handsfreemama.com/blog/page/63/">63</a></li>
+<li class="pagination-next"><a href="https://www.handsfreemama.com/blog/page/2/">Next Page &#x000BB;</a></li>
+</ul></div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="https://schema.org/WPSideBar"><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h4 class="widget-title widgettitle">A Course by Rachel</h4>
+<div class="textwidget custom-html-widget"><center>
+<a href="https://my.handsfreemama.com/">
+<img src="https://www.handsfreemama.com/wp-content/uploads/2020/12/SoulShift_logo.png" alt="Soul Shift" width="350" height="140" border="0">
+</a></center></div></div></section>
+<section id="text-12" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Welcome!</h4>
+<div class="textwidget"><a href="https://www.handsfreemama.com/about-me/">
+<img border="0" alt="Rachel" src="https://www.handsfreemama.com/wp-content/uploads/2022/11/hfm_sidebar_new.png" width="350" height="289">
+</a>
+<p style="text-align: center; font-size:11px"><i>I want to make memories, not to-do lists. I want to feel the squeeze of loving arms, not the pressure of over-commitment. I want to get lost in conversation with my favorite people, not consumed in a sea of unimportant emails. I want to be overwhelmed by sunsets that give me hope, not by overloaded agendas that steal my joy. I want the noise of my life to be a mixture of laughter & gratitude, not the intrusive buzz of mobile phones & text messages. I’m letting go of distraction, perfection, & pressure to grasp what really matters. I’m living Hands Free. Will you join me? (<a href="https://www.handsfreemama.com/about-me/">Read More</a>)</i></p>
+<div align="right" style="margin-top:-30px"><img src="https://www.handsfreemama.com/wp-content/uploads/2016/12/sb-sig.png"></div></div>
+</div></section>
+<section id="text-16" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Meet Rachel</h4>
+<div class="textwidget"><a href="https://www.handsfreemama.com/events/">
+<img border="0" alt="Speaking Events" src="https://www.handsfreemama.com/wp-content/uploads/2016/12/rs_sb.jpg" width="350" height="289">
+</a>
+<blockquote>“After attending one of Rachel’s speaking events, I am finding myself pausing more and re-setting my reactions to my spouse and children as a result of reflecting on the situations and lessons Rachel shared. Her decision to reveal the good, the bad, and the ugly, and what she’s learned as she’s worked to transform herself, has lasting impacts on her audience. Rachel’s lessons are like ripples in the ocean as they help others like me move towards choosing love and coming as we are. Rachel works wonders by helping others work wonders.”
+–A Hands Free Mama in progress </blockquote></div>
+</div></section>
+<section id="search-4" class="widget widget_search"><div class="widget-wrap"><form class="search-form" method="get" action="https://www.handsfreemama.com/" role="search" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction"><input class="search-form-input" type="search" name="s" id="searchform-2" placeholder="Search..." itemprop="query-input"><input class="search-form-submit" type="submit" value="Search"><meta content="https://www.handsfreemama.com/?s={s}" itemprop="target"></form></div></section>
+<section id="simple-social-icons-2" class="widget simple-social-icons"><div class="widget-wrap"><h4 class="widget-title widgettitle">Keep In Touch</h4>
+<ul class="aligncenter"><li class="ssi-email"><a href="https://www.handsfreemama.com/contact/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-email" aria-labelledby="social-email-2"><title id="social-email-2">Email</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-email"></use></svg></a></li><li class="ssi-facebook"><a href="https://www.facebook.com/TheHandsFreeRevolution" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-facebook" aria-labelledby="social-facebook-2"><title id="social-facebook-2">Facebook</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-facebook"></use></svg></a></li><li class="ssi-instagram"><a href="https://www.instagram.com/handsfreerevolution/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-instagram" aria-labelledby="social-instagram-2"><title id="social-instagram-2">Instagram</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-instagram"></use></svg></a></li><li class="ssi-pinterest"><a href="https://www.pinterest.com/handsfreemama/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-pinterest" aria-labelledby="social-pinterest-2"><title id="social-pinterest-2">Pinterest</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-pinterest"></use></svg></a></li><li class="ssi-rss"><a href="http://feeds.feedburner.com/handsfreemama" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-rss" aria-labelledby="social-rss-2"><title id="social-rss-2">RSS</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-rss"></use></svg></a></li><li class="ssi-twitter"><a href="https://twitter.com/handsfreemama" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-twitter" aria-labelledby="social-twitter-2"><title id="social-twitter-2">Twitter</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-twitter"></use></svg></a></li></ul></div></section>
+<section id="text-13" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Books</h4>
+<div class="textwidget"><center>
+<a href="https://www.handsfreemama.com/books/">
+<img src="https://www.handsfreemama.com/wp-content/uploads/2022/11/Soul-Shift-Cover-sidebar.png" alt="Live Love Now" width="263" height="395" border="0">
+</a><br>Buy: <a href="https://www.amazon.com/Soul-Shift-Getting-Unstuck-Reclaiming/dp/1683649524" target="_blank" rel="noopener">Amazon</a> | <a href="https://www.barnesandnoble.com/w/soul-shift-macy-rachel-stafford/1141363805" target="_blank" rel="noopener">Barnes & Noble</a><br><br>
+<a href="https://www.handsfreemama.com/books/">
+<img src="https://www.handsfreemama.com/wp-content/uploads/2019/12/LLV_SB.png" alt="Live Love Now" width="263" height="400" border="0">
+</a><br>Buy: <a href="https://amzn.to/2pdKI1e" target="_blank" rel="noopener">Amazon</a> | <a href="https://bit.ly/32P9Rxe?fbclid=IwAR2ABXGCgXX8VhHR23oHOvJBXVAWBr56Jz_vGJr8vYE3FJcVTRg7HIBbL0w" target="_blank" rel="noopener">Barnes & Noble</a><br><br>
+<a href="https://www.handsfreemama.com/books/">
+<img src="https://www.handsfreemama.com/wp-content/uploads/2016/12/olt-banner.png" alt="Books" width="263" height="400" border="0">
+</a><br>Buy: <a href="https://www.handsfreemama.com/onlylovetoday/" target="_blank" rel="noopener">Amazon</a> | <a href="http://www.barnesandnoble.com/w/only-love-today-rachel-macy-stafford/1123949263?ean=9780310346746" target="_blank" rel="noopener">Barnes & Noble</a><br><br><a href="https://www.handsfreemama.com/books/">
+<img src="https://www.handsfreemama.com/wp-content/uploads/2013/11/book-sb.jpg" alt="Books" width="263" height="400" border="0">
+</a>
+<br>Buy: <a href="http://amzn.to/1xy8rGU" target="_blank" rel="noopener">Amazon</a> | <a href="http://www.barnesandnoble.com/w/hands-free-life-rachel-macy-stafford/1120663228?ean=9780310338154" target="_blank" rel="noopener">Barnes & Noble</a><br><br>
+<a href="https://www.handsfreemama.com/books/">
+<img src="https://www.handsfreemama.com/wp-content/uploads/2014/03/thebook1.png" alt="Books" width="308" height="400" border="0">
+</a>
+<br>Buy: <a href="https://www.amazon.com/Hands-Free-Mama-Putting-Perfection/dp/0310338131" target="_blank" rel="noopener">Amazon</a> | <a href="http://www.barnesandnoble.com/w/hands-free-mama-rachel-stafford/1115457387?ean=9780310338130" target="_blank" rel="noopener">Barnes & Noble</a></center></div>
+</div></section>
+<section id="archives-3" class="widget widget_archive"><div class="widget-wrap"><h4 class="widget-title widgettitle">Archives</h4>
+<label class="screen-reader-text" for="archives-dropdown-3">Archives</label>
+<select id="archives-dropdown-3" name="archive-dropdown">
+<option value>Select Month</option>
+<option value="https://www.handsfreemama.com/2023/12/"> December 2023 </option>
+<option value="https://www.handsfreemama.com/2023/11/"> November 2023 </option>
+<option value="https://www.handsfreemama.com/2023/10/"> October 2023 </option>
+<option value="https://www.handsfreemama.com/2023/09/"> September 2023 </option>
+<option value="https://www.handsfreemama.com/2023/08/"> August 2023 </option>
+<option value="https://www.handsfreemama.com/2023/04/"> April 2023 </option>
+<option value="https://www.handsfreemama.com/2023/03/"> March 2023 </option>
+<option value="https://www.handsfreemama.com/2023/02/"> February 2023 </option>
+<option value="https://www.handsfreemama.com/2023/01/"> January 2023 </option>
+<option value="https://www.handsfreemama.com/2022/12/"> December 2022 </option>
+<option value="https://www.handsfreemama.com/2022/10/"> October 2022 </option>
+<option value="https://www.handsfreemama.com/2022/08/"> August 2022 </option>
+<option value="https://www.handsfreemama.com/2022/07/"> July 2022 </option>
+<option value="https://www.handsfreemama.com/2022/06/"> June 2022 </option>
+<option value="https://www.handsfreemama.com/2022/03/"> March 2022 </option>
+<option value="https://www.handsfreemama.com/2021/12/"> December 2021 </option>
+<option value="https://www.handsfreemama.com/2021/11/"> November 2021 </option>
+<option value="https://www.handsfreemama.com/2021/10/"> October 2021 </option>
+<option value="https://www.handsfreemama.com/2021/09/"> September 2021 </option>
+<option value="https://www.handsfreemama.com/2021/08/"> August 2021 </option>
+<option value="https://www.handsfreemama.com/2021/07/"> July 2021 </option>
+<option value="https://www.handsfreemama.com/2021/05/"> May 2021 </option>
+<option value="https://www.handsfreemama.com/2021/04/"> April 2021 </option>
+<option value="https://www.handsfreemama.com/2021/03/"> March 2021 </option>
+<option value="https://www.handsfreemama.com/2021/02/"> February 2021 </option>
+<option value="https://www.handsfreemama.com/2021/01/"> January 2021 </option>
+<option value="https://www.handsfreemama.com/2020/12/"> December 2020 </option>
+<option value="https://www.handsfreemama.com/2020/11/"> November 2020 </option>
+<option value="https://www.handsfreemama.com/2020/08/"> August 2020 </option>
+<option value="https://www.handsfreemama.com/2020/06/"> June 2020 </option>
+<option value="https://www.handsfreemama.com/2020/05/"> May 2020 </option>
+<option value="https://www.handsfreemama.com/2020/04/"> April 2020 </option>
+<option value="https://www.handsfreemama.com/2020/03/"> March 2020 </option>
+<option value="https://www.handsfreemama.com/2020/02/"> February 2020 </option>
+<option value="https://www.handsfreemama.com/2020/01/"> January 2020 </option>
+<option value="https://www.handsfreemama.com/2019/12/"> December 2019 </option>
+<option value="https://www.handsfreemama.com/2019/11/"> November 2019 </option>
+<option value="https://www.handsfreemama.com/2019/10/"> October 2019 </option>
+<option value="https://www.handsfreemama.com/2019/09/"> September 2019 </option>
+<option value="https://www.handsfreemama.com/2019/08/"> August 2019 </option>
+<option value="https://www.handsfreemama.com/2019/07/"> July 2019 </option>
+<option value="https://www.handsfreemama.com/2019/06/"> June 2019 </option>
+<option value="https://www.handsfreemama.com/2019/05/"> May 2019 </option>
+<option value="https://www.handsfreemama.com/2019/04/"> April 2019 </option>
+<option value="https://www.handsfreemama.com/2019/01/"> January 2019 </option>
+<option value="https://www.handsfreemama.com/2018/12/"> December 2018 </option>
+<option value="https://www.handsfreemama.com/2018/11/"> November 2018 </option>
+<option value="https://www.handsfreemama.com/2018/10/"> October 2018 </option>
+<option value="https://www.handsfreemama.com/2018/09/"> September 2018 </option>
+<option value="https://www.handsfreemama.com/2018/08/"> August 2018 </option>
+<option value="https://www.handsfreemama.com/2018/07/"> July 2018 </option>
+<option value="https://www.handsfreemama.com/2018/06/"> June 2018 </option>
+<option value="https://www.handsfreemama.com/2018/05/"> May 2018 </option>
+<option value="https://www.handsfreemama.com/2018/04/"> April 2018 </option>
+<option value="https://www.handsfreemama.com/2018/03/"> March 2018 </option>
+<option value="https://www.handsfreemama.com/2018/02/"> February 2018 </option>
+<option value="https://www.handsfreemama.com/2018/01/"> January 2018 </option>
+<option value="https://www.handsfreemama.com/2017/12/"> December 2017 </option>
+<option value="https://www.handsfreemama.com/2017/11/"> November 2017 </option>
+<option value="https://www.handsfreemama.com/2017/10/"> October 2017 </option>
+<option value="https://www.handsfreemama.com/2017/09/"> September 2017 </option>
+<option value="https://www.handsfreemama.com/2017/08/"> August 2017 </option>
+<option value="https://www.handsfreemama.com/2017/06/"> June 2017 </option>
+<option value="https://www.handsfreemama.com/2017/05/"> May 2017 </option>
+<option value="https://www.handsfreemama.com/2017/04/"> April 2017 </option>
+<option value="https://www.handsfreemama.com/2017/03/"> March 2017 </option>
+<option value="https://www.handsfreemama.com/2017/02/"> February 2017 </option>
+<option value="https://www.handsfreemama.com/2017/01/"> January 2017 </option>
+<option value="https://www.handsfreemama.com/2016/12/"> December 2016 </option>
+<option value="https://www.handsfreemama.com/2016/11/"> November 2016 </option>
+<option value="https://www.handsfreemama.com/2016/10/"> October 2016 </option>
+<option value="https://www.handsfreemama.com/2016/09/"> September 2016 </option>
+<option value="https://www.handsfreemama.com/2016/08/"> August 2016 </option>
+<option value="https://www.handsfreemama.com/2016/06/"> June 2016 </option>
+<option value="https://www.handsfreemama.com/2016/05/"> May 2016 </option>
+<option value="https://www.handsfreemama.com/2016/04/"> April 2016 </option>
+<option value="https://www.handsfreemama.com/2016/03/"> March 2016 </option>
+<option value="https://www.handsfreemama.com/2016/02/"> February 2016 </option>
+<option value="https://www.handsfreemama.com/2016/01/"> January 2016 </option>
+<option value="https://www.handsfreemama.com/2015/12/"> December 2015 </option>
+<option value="https://www.handsfreemama.com/2015/11/"> November 2015 </option>
+<option value="https://www.handsfreemama.com/2015/10/"> October 2015 </option>
+<option value="https://www.handsfreemama.com/2015/09/"> September 2015 </option>
+<option value="https://www.handsfreemama.com/2015/08/"> August 2015 </option>
+<option value="https://www.handsfreemama.com/2015/07/"> July 2015 </option>
+<option value="https://www.handsfreemama.com/2015/06/"> June 2015 </option>
+<option value="https://www.handsfreemama.com/2015/05/"> May 2015 </option>
+<option value="https://www.handsfreemama.com/2015/04/"> April 2015 </option>
+<option value="https://www.handsfreemama.com/2015/03/"> March 2015 </option>
+<option value="https://www.handsfreemama.com/2015/02/"> February 2015 </option>
+<option value="https://www.handsfreemama.com/2015/01/"> January 2015 </option>
+<option value="https://www.handsfreemama.com/2014/12/"> December 2014 </option>
+<option value="https://www.handsfreemama.com/2014/11/"> November 2014 </option>
+<option value="https://www.handsfreemama.com/2014/10/"> October 2014 </option>
+<option value="https://www.handsfreemama.com/2014/09/"> September 2014 </option>
+<option value="https://www.handsfreemama.com/2014/08/"> August 2014 </option>
+<option value="https://www.handsfreemama.com/2014/06/"> June 2014 </option>
+<option value="https://www.handsfreemama.com/2014/05/"> May 2014 </option>
+<option value="https://www.handsfreemama.com/2014/04/"> April 2014 </option>
+<option value="https://www.handsfreemama.com/2014/03/"> March 2014 </option>
+<option value="https://www.handsfreemama.com/2014/02/"> February 2014 </option>
+<option value="https://www.handsfreemama.com/2014/01/"> January 2014 </option>
+<option value="https://www.handsfreemama.com/2013/12/"> December 2013 </option>
+<option value="https://www.handsfreemama.com/2013/11/"> November 2013 </option>
+<option value="https://www.handsfreemama.com/2013/09/"> September 2013 </option>
+<option value="https://www.handsfreemama.com/2013/08/"> August 2013 </option>
+<option value="https://www.handsfreemama.com/2013/07/"> July 2013 </option>
+<option value="https://www.handsfreemama.com/2013/06/"> June 2013 </option>
+<option value="https://www.handsfreemama.com/2013/05/"> May 2013 </option>
+<option value="https://www.handsfreemama.com/2013/04/"> April 2013 </option>
+<option value="https://www.handsfreemama.com/2013/03/"> March 2013 </option>
+<option value="https://www.handsfreemama.com/2013/02/"> February 2013 </option>
+<option value="https://www.handsfreemama.com/2013/01/"> January 2013 </option>
+<option value="https://www.handsfreemama.com/2012/11/"> November 2012 </option>
+<option value="https://www.handsfreemama.com/2012/09/"> September 2012 </option>
+<option value="https://www.handsfreemama.com/2012/08/"> August 2012 </option>
+<option value="https://www.handsfreemama.com/2012/07/"> July 2012 </option>
+<option value="https://www.handsfreemama.com/2012/06/"> June 2012 </option>
+<option value="https://www.handsfreemama.com/2012/05/"> May 2012 </option>
+<option value="https://www.handsfreemama.com/2012/04/"> April 2012 </option>
+<option value="https://www.handsfreemama.com/2012/03/"> March 2012 </option>
+<option value="https://www.handsfreemama.com/2012/01/"> January 2012 </option>
+<option value="https://www.handsfreemama.com/2011/12/"> December 2011 </option>
+<option value="https://www.handsfreemama.com/2011/11/"> November 2011 </option>
+<option value="https://www.handsfreemama.com/2011/10/"> October 2011 </option>
+<option value="https://www.handsfreemama.com/2011/09/"> September 2011 </option>
+<option value="https://www.handsfreemama.com/2011/08/"> August 2011 </option>
+<option value="https://www.handsfreemama.com/2011/07/"> July 2011 </option>
+<option value="https://www.handsfreemama.com/2011/06/"> June 2011 </option>
+<option value="https://www.handsfreemama.com/2011/05/"> May 2011 </option>
+<option value="https://www.handsfreemama.com/2011/04/"> April 2011 </option>
+<option value="https://www.handsfreemama.com/2011/03/"> March 2011 </option>
+<option value="https://www.handsfreemama.com/2011/02/"> February 2011 </option>
+<option value="https://www.handsfreemama.com/2011/01/"> January 2011 </option>
+<option value="https://www.handsfreemama.com/2010/12/"> December 2010 </option>
+</select>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-3" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+</div></section>
+<section id="categories-2" class="widget widget_categories"><div class="widget-wrap"><h4 class="widget-title widgettitle">Categories</h4>
+<form action="https://www.handsfreemama.com" method="get"><label class="screen-reader-text" for="cat">Categories</label><select name="cat" id="cat" class="postform">
+<option value="-1">Select Category</option>
+<option class="level-0" value="1840">#metoo</option>
+<option class="level-0" value="25">Accent on the Positive</option>
+<option class="level-0" value="1757">achieving dreams</option>
+<option class="level-0" value="1754">advocacy</option>
+<option class="level-0" value="1836">African Road</option>
+<option class="level-0" value="1826">being present</option>
+<option class="level-0" value="1761">compassion</option>
+<option class="level-0" value="1778">conscious parenting</option>
+<option class="level-0" value="1859">Coronavirus</option>
+<option class="level-0" value="1735">courage</option>
+<option class="level-0" value="1742">dealing with change</option>
+<option class="level-0" value="1784">dying</option>
+<option class="level-0" value="1769">elderly</option>
+<option class="level-0" value="246">Embrace The Reminder</option>
+<option class="level-0" value="1766">emotional wellbeing</option>
+<option class="level-0" value="210">Eyes Unseen Words Unheard</option>
+<option class="level-0" value="1767">finding joy</option>
+<option class="level-0" value="229">Hands Free Baby Steps</option>
+<option class="level-0" value="84">Hands Free Evidence</option>
+<option class="level-0" value="1780">healing</option>
+<option class="level-0" value="1747">human connection</option>
+<option class="level-0" value="1760">human needs</option>
+<option class="level-0" value="1816">I am enough</option>
+<option class="level-0" value="79">I Have Today</option>
+<option class="level-0" value="1741">intentional living</option>
+<option class="level-0" value="1853">isolation</option>
+<option class="level-0" value="1776">kids and phones</option>
+<option class="level-0" value="1753">life&#8217;s purpose</option>
+<option class="level-0" value="1857">Live Love Now</option>
+<option class="level-0" value="1856">LIVE LOVE NOW the book</option>
+<option class="level-0" value="1736">living authentically</option>
+<option class="level-0" value="262">Living In Realness</option>
+<option class="level-0" value="22">Memory Bank</option>
+<option class="level-0" value="1763">mental health</option>
+<option class="level-0" value="1737">new year hopes</option>
+<option class="level-0" value="1744">new year resolutions</option>
+<option class="level-0" value="1782">only love today</option>
+<option class="level-0" value="1743">only love today the book</option>
+<option class="level-0" value="1863">overcoming adversity</option>
+<option class="level-0" value="1838">Overcoming fear</option>
+<option class="level-0" value="1865">Pandemic holiday</option>
+<option class="level-0" value="1867">pandemic struggles</option>
+<option class="level-0" value="30">Perfect Imperfection</option>
+<option class="level-0" value="1748">positive parenting</option>
+<option class="level-0" value="1785">purpose</option>
+<option class="level-0" value="28">Putting Distraction In Its Place</option>
+<option class="level-0" value="1862">racism</option>
+<option class="level-0" value="1825">Raising Resilient Kids</option>
+<option class="level-0" value="1872">raising teens</option>
+<option class="level-0" value="1852">rejection</option>
+<option class="level-0" value="1759">relationships</option>
+<option class="level-0" value="26">Right Here Right Now</option>
+<option class="level-0" value="1837">Rwanda</option>
+<option class="level-0" value="1824">School Shootings</option>
+<option class="level-0" value="1745">self-acceptance</option>
+<option class="level-0" value="1746">self-forgiveness</option>
+<option class="level-0" value="1781">self-love</option>
+<option class="level-0" value="1756">self-perception</option>
+<option class="level-0" value="1839">sexual assault</option>
+<option class="level-0" value="1770">simplicity</option>
+<option class="level-0" value="1870">Soul Shift</option>
+<option class="level-0" value="1869">special education teacher</option>
+<option class="level-0" value="1789">special needs children</option>
+<option class="level-0" value="29">Sunset Moments</option>
+<option class="level-0" value="21">Take Time to Say It</option>
+<option class="level-0" value="1831">teen wellness</option>
+<option class="level-0" value="24">The Hands Free Revolution</option>
+<option class="level-0" value="325">The Power of A Question</option>
+<option class="level-0" value="50">The Truth Hurts (and Heals)</option>
+<option class="level-0" value="334">There Is A Reason</option>
+<option class="level-0" value="1854">traveling</option>
+<option class="level-0" value="1830">unconditional love</option>
+<option class="level-0" value="1866">virtual learning</option>
+<option class="level-0" value="1768">volunteering</option>
+<option class="level-0" value="18">What I Would Have Missed</option>
+<option class="level-0" value="1779">yelling</option>
+<option class="level-0" value="55">Your Words</option>
+</select>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+</div></section>
+</aside></div></div><nav class="nav-footer"></nav><div class="footer-widgets"><div class="wrap"><div class="widget-area footer-widgets-1 footer-widget-area"><section id="text-22" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">HFM on Facebook</h4>
+<div class="textwidget"><div class="fb-page" data-href="https://www.facebook.com/TheHandsFreeRevolution" data-tabs="timeline" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/TheHandsFreeRevolution" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TheHandsFreeRevolution">The Hands Free Revolution</a></blockquote></div></div>
+</div></section>
+</div><div class="widget-area footer-widgets-2 footer-widget-area"><section id="text-21" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">HFM on Pinterest</h4>
+<div class="textwidget"><a data-pin-do="embedUser" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/handsfreemama/"></a></div>
+</div></section>
+</div><div class="widget-area footer-widgets-3 footer-widget-area"><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">HFM on Instagram</h4>
+<div class="textwidget">
+<div id="sb_instagram" class="sbi sbi_mob_col_1 sbi_tab_col_2 sbi_col_3 sbi_width_resp sbi_disable_mobile" style="padding-bottom: 10px;width: 100%;" data-feedid="*1" data-res="auto" data-cols="3" data-colsmobile="1" data-colstablet="2" data-num="9" data-nummobile data-shortcode-atts="{&quot;feed&quot;:&quot;1&quot;}" data-postid="7179" data-locatornonce="5c35ef230a" data-sbi-flags="favorLocal">
+<div id="sbi_images" style="padding: 5px;">
+<div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18015906674002441" data-date="1703085547">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C1FGIMKON79/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/412043091_382541550803781_6123351647763987863_n.jpg?_nc_cat=110&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=Yh3cb4MBLJUAX8dg3Z4&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDbwq6GPOLFIUkybX8Qmj53ZE2LIsXb9oqw1b6b8ODeZA&#038;oe=6587E3B2" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/412043091_382541550803781_6123351647763987863_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Yh3cb4MBLJUAX8dg3Z4&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDbwq6GPOLFIUkybX8Qmj53ZE2LIsXb9oqw1b6b8ODeZA&amp;oe=6587E3B2&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/412043091_382541550803781_6123351647763987863_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Yh3cb4MBLJUAX8dg3Z4&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDbwq6GPOLFIUkybX8Qmj53ZE2LIsXb9oqw1b6b8ODeZA&amp;oe=6587E3B2&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/412043091_382541550803781_6123351647763987863_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Yh3cb4MBLJUAX8dg3Z4&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDbwq6GPOLFIUkybX8Qmj53ZE2LIsXb9oqw1b6b8ODeZA&amp;oe=6587E3B2&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/412043091_382541550803781_6123351647763987863_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Yh3cb4MBLJUAX8dg3Z4&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDbwq6GPOLFIUkybX8Qmj53ZE2LIsXb9oqw1b6b8ODeZA&amp;oe=6587E3B2&quot;}">
+<span class="sbi-screenreader">What if the reason you are so determined to do thi</span>
+<img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="What if the reason you are so determined to do things differently is because you know it CAN BE?">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18063026902470497" data-date="1702920588">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C1ALflwrgU-/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/411984875_336566249306113_4289836074249695950_n.jpg?_nc_cat=105&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=0usAIQWraVAAX9rCssC&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfBjgYyOdSL14rD0TDYbNO7FTHgYSLbu-5rfBlYTsedtOQ&#038;oe=65894756" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/411984875_336566249306113_4289836074249695950_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=0usAIQWraVAAX9rCssC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBjgYyOdSL14rD0TDYbNO7FTHgYSLbu-5rfBlYTsedtOQ&amp;oe=65894756&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/411984875_336566249306113_4289836074249695950_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=0usAIQWraVAAX9rCssC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBjgYyOdSL14rD0TDYbNO7FTHgYSLbu-5rfBlYTsedtOQ&amp;oe=65894756&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/411984875_336566249306113_4289836074249695950_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=0usAIQWraVAAX9rCssC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBjgYyOdSL14rD0TDYbNO7FTHgYSLbu-5rfBlYTsedtOQ&amp;oe=65894756&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/411984875_336566249306113_4289836074249695950_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=0usAIQWraVAAX9rCssC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBjgYyOdSL14rD0TDYbNO7FTHgYSLbu-5rfBlYTsedtOQ&amp;oe=65894756&quot;}">
+<span class="sbi-screenreader">Take five breaths right now if you need them.
+My</span>
+<img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Take five breaths right now if you need them. 
+
+My hand in yours,
+Rachel">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_18053933269509017" data-date="1702573177">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0103C3rDg2/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/410197062_1362255177997947_5970863485547278627_n.jpg?_nc_cat=103&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=Tsb2C7EhlQMAX8eR3H0&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfCXY5tV4lx__McfrXzNZrWSovuQNg9iC2DOflI0jvRhEg&#038;oe=658892CF" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410197062_1362255177997947_5970863485547278627_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Tsb2C7EhlQMAX8eR3H0&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCXY5tV4lx__McfrXzNZrWSovuQNg9iC2DOflI0jvRhEg&amp;oe=658892CF&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410197062_1362255177997947_5970863485547278627_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Tsb2C7EhlQMAX8eR3H0&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCXY5tV4lx__McfrXzNZrWSovuQNg9iC2DOflI0jvRhEg&amp;oe=658892CF&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410197062_1362255177997947_5970863485547278627_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Tsb2C7EhlQMAX8eR3H0&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCXY5tV4lx__McfrXzNZrWSovuQNg9iC2DOflI0jvRhEg&amp;oe=658892CF&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410197062_1362255177997947_5970863485547278627_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Tsb2C7EhlQMAX8eR3H0&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCXY5tV4lx__McfrXzNZrWSovuQNg9iC2DOflI0jvRhEg&amp;oe=658892CF&quot;}">
+<span class="sbi-screenreader">When I tried to describe to a friend the impact a </span>
+<svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+</svg> <img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="When I tried to describe to a friend the impact a set of conversation cards made on my family dinner during a raw and tender time, I couldn’t find the words.
+
+A year later, the owner of the printing company that printed some of the most beautiful conversation cards I’ve ever seen did have the words.
+
+He admitted that he doesn’t normally read all the materials he is printing, but this time, he read every single one of the cards. This individual’s observation, which I share in this post, holds an incredible insight that has inspired the way I am spending my current days and plans for 2024. Suddenly, what matters has become so clear.
+
+From my heart to yours, I share my story and pictures in hopes you are inspired as well. My latest post is on handsfreemama.com. You can read by clicking link in bio or stories. I am also happy to message it to you.
+
+P.S. I’d be grateful to know if you are here, still showing up to read my long-form essays. 📝❤️">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18110789953345977" data-date="1702481822">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0zGnV6r9Z3/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/410088648_842132204368592_4355442247583837625_n.jpg?_nc_cat=111&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=jp1j-DZ2MdUAX-cKY1C&#038;_nc_oc=AQltMKMvgGWj_NyuAfzwHtNklTDwho-sEaWVkDcKb0uEVJL2hIjw15jSQxpTxDdBNNQ&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfD2NacT9bIUSHbEAOELj7io1-c3paq2uijUE_HdoztucQ&#038;oe=6588696E" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410088648_842132204368592_4355442247583837625_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=jp1j-DZ2MdUAX-cKY1C&amp;_nc_oc=AQltMKMvgGWj_NyuAfzwHtNklTDwho-sEaWVkDcKb0uEVJL2hIjw15jSQxpTxDdBNNQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfD2NacT9bIUSHbEAOELj7io1-c3paq2uijUE_HdoztucQ&amp;oe=6588696E&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410088648_842132204368592_4355442247583837625_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=jp1j-DZ2MdUAX-cKY1C&amp;_nc_oc=AQltMKMvgGWj_NyuAfzwHtNklTDwho-sEaWVkDcKb0uEVJL2hIjw15jSQxpTxDdBNNQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfD2NacT9bIUSHbEAOELj7io1-c3paq2uijUE_HdoztucQ&amp;oe=6588696E&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410088648_842132204368592_4355442247583837625_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=jp1j-DZ2MdUAX-cKY1C&amp;_nc_oc=AQltMKMvgGWj_NyuAfzwHtNklTDwho-sEaWVkDcKb0uEVJL2hIjw15jSQxpTxDdBNNQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfD2NacT9bIUSHbEAOELj7io1-c3paq2uijUE_HdoztucQ&amp;oe=6588696E&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/410088648_842132204368592_4355442247583837625_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=jp1j-DZ2MdUAX-cKY1C&amp;_nc_oc=AQltMKMvgGWj_NyuAfzwHtNklTDwho-sEaWVkDcKb0uEVJL2hIjw15jSQxpTxDdBNNQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfD2NacT9bIUSHbEAOELj7io1-c3paq2uijUE_HdoztucQ&amp;oe=6588696E&quot;}">
+<span class="sbi-screenreader">I can be anything I want today.
+Today,
+let me be </span>
+<img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="I can be anything I want today.
+Today, 
+let me be love.
+
+-Rachel Macy Stafford">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_17856923238069489" data-date="1702134578">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0owTH2uUEY/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/409761516_7011695932184227_278794191240106703_n.jpg?_nc_cat=107&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=3V2cLD4yheAAX-iXXsC&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDZCJHfsmnUbnbJQf5gKgvvTITCxfZ57myzEPwPeAF5lw&#038;oe=65889A13" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/409761516_7011695932184227_278794191240106703_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=3V2cLD4yheAAX-iXXsC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDZCJHfsmnUbnbJQf5gKgvvTITCxfZ57myzEPwPeAF5lw&amp;oe=65889A13&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/409761516_7011695932184227_278794191240106703_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=3V2cLD4yheAAX-iXXsC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDZCJHfsmnUbnbJQf5gKgvvTITCxfZ57myzEPwPeAF5lw&amp;oe=65889A13&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/409761516_7011695932184227_278794191240106703_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=3V2cLD4yheAAX-iXXsC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDZCJHfsmnUbnbJQf5gKgvvTITCxfZ57myzEPwPeAF5lw&amp;oe=65889A13&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/409761516_7011695932184227_278794191240106703_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=3V2cLD4yheAAX-iXXsC&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDZCJHfsmnUbnbJQf5gKgvvTITCxfZ57myzEPwPeAF5lw&amp;oe=65889A13&quot;}">
+<span class="sbi-screenreader">Our friend Alice Kajoina, with the help of her Bra</span>
+<svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+</svg> <img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Our friend Alice Kajoina, with the help of her Brave Girls community members, have worked diligently over the past four weeks to make additional bracelet sets for our community. The funds she earns from your support are enabling her to install tile flooring and add interior paint to her home that was built on a plot of land purchased from your jewelry sales in 2020.
+
+Alice often says she cannot believe strangers love her and her family this way.
+
+My response to her is this: “Your story shows us what one person can do with determination and love – and it’s a story we want to be a part of.”
+
+Alice has dedicated her life to helping others. Twenty-four children have been cared for by Alice over a 30-year period while being a single woman most of that time. In addition, Alice has developed a passion and gift for training young women to sew and make handcrafts so they can market their wares and earn income. They call themselves ‘Brave Girls,’ and the purpose of their gatherings goes far beyond creating product; it’s about creating hope through community.
+
+When I asked Alice what she would like those who purchase BEADS OF STRENGTH to know about these works of art, she said:
+
+“The necklaces are made of from old magazines and calendars. I make that waste a better thing. I pray and sing as I make the necklaces. The demand for more bracelets does miracles for me. Through your support for me, I can help many others.”
+
+To purchase, click link in my bio or stories. Please don’t delay if you want a set. They will sell out quickly.
+My hand in yours, Rachel 🤝">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_18010711511079631" data-date="1701879053">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0hI7JouCCh/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/407771484_870560721410234_4979316447760868272_n.jpg?_nc_cat=108&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=kZsDdpAkLYYAX9u7gso&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDFh2dnwIZPNUxEDgST05W7-o3V5-gOPJJgP2o5NWRopA&#038;oe=6588EE7B" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407771484_870560721410234_4979316447760868272_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=kZsDdpAkLYYAX9u7gso&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDFh2dnwIZPNUxEDgST05W7-o3V5-gOPJJgP2o5NWRopA&amp;oe=6588EE7B&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407771484_870560721410234_4979316447760868272_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=kZsDdpAkLYYAX9u7gso&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDFh2dnwIZPNUxEDgST05W7-o3V5-gOPJJgP2o5NWRopA&amp;oe=6588EE7B&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407771484_870560721410234_4979316447760868272_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=kZsDdpAkLYYAX9u7gso&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDFh2dnwIZPNUxEDgST05W7-o3V5-gOPJJgP2o5NWRopA&amp;oe=6588EE7B&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407771484_870560721410234_4979316447760868272_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=kZsDdpAkLYYAX9u7gso&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDFh2dnwIZPNUxEDgST05W7-o3V5-gOPJJgP2o5NWRopA&amp;oe=6588EE7B&quot;}">
+<span class="sbi-screenreader">💔 When Holidays Are Hard Care Package
+I can’</span>
+<svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+</svg> <img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="💔 When Holidays Are Hard Care Package
+
+I can’t tell you it’s going to be okay, but I can tell you the birds have something hopeful to say if you listen close.
+Keep listening. 
+
+I can’t tell you the road ahead is gonna be easy, 
+But I can tell you where someone has cleared a path for easier walking.
+Keep walking. 
+
+I can’t tell you how to keep your hands from shaking, 
+But I can tell you it’s possible to hold your own hand and be brave.
+Keep holding.
+
+I can’t tell you that you’re gonna feel warm and carefree again, 
+But I can tell you the sun can dry your damp soul if you give it time.
+Keep waiting. 
+
+I can’t tell you that gaping hole in your life will fill anytime soon,
+But I can tell you that faith and love are space fillers.
+Keep filling. 
+
+I can’t tell you that your tears will cease, 
+But I can tell you there’s a fight song within you, just waiting to be released.
+Keep humming. 
+
+I can’t tell you it’s gonna be ok,
+But I can tell you it’s possible to turn your fear and uncertainty into a lifeline.
+
+Keep reaching. There might be someone on the other end waiting to grasp it. My hand in yours.
+
+RMS
+
+🎁 For the first time ever, I’ve created a care package of thoughtful items sure to encourage anyone who is struggling this holiday season. Click link in bio or stories for all the details about the items inside. By purchasing one box, you are supporting 6 small businesses. ❤️">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_17963892536660036" data-date="1701735533">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0c3LlAogg3/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/407975957_1498324294282243_2672107684933795389_n.jpg?_nc_cat=110&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=wrY9sASk-W8AX9ocXTb&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfAceyJlvLTPe8yb8S7h3mRBh26IwEW9WtYINWLCfze5Eg&#038;oe=65880D8D" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407975957_1498324294282243_2672107684933795389_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=wrY9sASk-W8AX9ocXTb&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAceyJlvLTPe8yb8S7h3mRBh26IwEW9WtYINWLCfze5Eg&amp;oe=65880D8D&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407975957_1498324294282243_2672107684933795389_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=wrY9sASk-W8AX9ocXTb&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAceyJlvLTPe8yb8S7h3mRBh26IwEW9WtYINWLCfze5Eg&amp;oe=65880D8D&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407975957_1498324294282243_2672107684933795389_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=wrY9sASk-W8AX9ocXTb&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAceyJlvLTPe8yb8S7h3mRBh26IwEW9WtYINWLCfze5Eg&amp;oe=65880D8D&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/407975957_1498324294282243_2672107684933795389_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=wrY9sASk-W8AX9ocXTb&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAceyJlvLTPe8yb8S7h3mRBh26IwEW9WtYINWLCfze5Eg&amp;oe=65880D8D&quot;}">
+<span class="sbi-screenreader">Joan Baez once said, “Action is the antidote to </span>
+<svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+</svg> <img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Joan Baez once said, “Action is the antidote to despair,” and @valariekaur offers options for everyone to participate in the healing needed right now. Which will you take? 
+
+“Donate to aid. Go to the vigil. Organize the vigil. Make art. Make music. Go to the teach-in. Host the teach-in. Post. Don’t post. Meditate. March. Make a container for grief. Another for rage. Talk to children. Tell stories of peacebuilders. Study liberation. Pray. Kiss the earth. Look at the stars. Call the ancestors. Learn the names of the dead children. Make an altar for them. Bring people together. Feed them. Light candles. Sing songs. Give freely. Start an authentic exchange with someone who is ready to do the same. Be silent. Speak. Then be silent again. Rest. We live into what we imagine. Imagine the world as it could be. Paint that world. Sing that world. Invite it into your dreams. Practice that world in the space available to you. Add to this list.” 
+
+-Valarie Kaur, 
+Author of SEE NO STRANGER, founder of @revloveproject, and advocate of the belief that “the way we make change is just as important as the change we make.”">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_18033728635647847" data-date="1701534113">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0W3AMBL52P/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/405502689_1423136834936771_388734483778818316_n.jpg?_nc_cat=104&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=WJa_-o4vAXYAX9oC6vw&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfBgEXTv-cegS1904cM_ovrcmkNm8Ouj8WXn54qGi05jZg&#038;oe=65887F5C" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405502689_1423136834936771_388734483778818316_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=WJa_-o4vAXYAX9oC6vw&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBgEXTv-cegS1904cM_ovrcmkNm8Ouj8WXn54qGi05jZg&amp;oe=65887F5C&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405502689_1423136834936771_388734483778818316_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=WJa_-o4vAXYAX9oC6vw&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBgEXTv-cegS1904cM_ovrcmkNm8Ouj8WXn54qGi05jZg&amp;oe=65887F5C&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405502689_1423136834936771_388734483778818316_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=WJa_-o4vAXYAX9oC6vw&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBgEXTv-cegS1904cM_ovrcmkNm8Ouj8WXn54qGi05jZg&amp;oe=65887F5C&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405502689_1423136834936771_388734483778818316_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=WJa_-o4vAXYAX9oC6vw&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBgEXTv-cegS1904cM_ovrcmkNm8Ouj8WXn54qGi05jZg&amp;oe=65887F5C&quot;}">
+<span class="sbi-screenreader">Thanksgiving 2022 marked the first time our family</span>
+<svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+</svg> <img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Thanksgiving 2022 marked the first time our family of four would be celebrating the holiday without extended family or friends. We’d gone through a difficult period and things were tender.
+
+I wanted to do everything I could to make our Thanksgiving dinner a pleasant experience, so I Googled “Thanksgiving dinner conversation starters”. I selected 20 of my favorites, printed them out, cut them into slips, and placed them in a Tupperware bowl.
+
+My family went through almost all the handmade conversation cards during that meal. Not only did they help break the ice, but they also helped us remember things we loved about each other and learn things we didn’t know after a year of growth.
+
+This Thanksgiving, it was just the four of us again. We didn’t need the cards to make conversation this time, but we had some – and they were extraordinarily beautiful, thoughtful, and entertaining. My friend, Jessica at @lumitory, created stunning boxes of conversation cards and gifted me with two of the sets: family and holiday.
+
+My older daughter put herself in charge of selecting light-hearted questions for dinnertime, and as a result, we laughed A LOT. My family ended up sitting at table long after we were finished eating to answer more questions. It was one of the best experiences we shared in 2023.
+
+I sent a note of gratitude to Jessica. I explained how much my family could have used these cards last year, but that I was certain the cards would have perfect timing for someone else’s family. Jessica responded with a 15% discount for our community! Simply use my special link (in bio or stories) and use the discount code CONNECTION15 at checkout.
+
+In addition to the family and holiday sets, there are sets for dating couples, wedding receptions, and even a legacy set to use with aging loved ones.❤️ my hand in yours, Rachel">
+</a>
+</div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_17996585918124262" data-date="1701448892">
+<div class="sbi_photo_wrap">
+<a class="sbi_photo" href="https://www.instagram.com/p/C0UUdUQrGoz/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent.cdninstagram.com/v/t51.29350-15/405496261_666372972335428_4891701044813203481_n.jpg?_nc_cat=104&#038;ccb=1-7&#038;_nc_sid=c4dd86&#038;_nc_ohc=SE6WK-6zM1gAX-0tQXQ&#038;_nc_ht=scontent.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDkAH3CbxzIYqpQ_ILUBWpAXCiRfofZLptwlmhQjd4hTQ&#038;oe=6589CFCC" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405496261_666372972335428_4891701044813203481_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=SE6WK-6zM1gAX-0tQXQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDkAH3CbxzIYqpQ_ILUBWpAXCiRfofZLptwlmhQjd4hTQ&amp;oe=6589CFCC&quot;,&quot;150&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405496261_666372972335428_4891701044813203481_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=SE6WK-6zM1gAX-0tQXQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDkAH3CbxzIYqpQ_ILUBWpAXCiRfofZLptwlmhQjd4hTQ&amp;oe=6589CFCC&quot;,&quot;320&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405496261_666372972335428_4891701044813203481_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=SE6WK-6zM1gAX-0tQXQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDkAH3CbxzIYqpQ_ILUBWpAXCiRfofZLptwlmhQjd4hTQ&amp;oe=6589CFCC&quot;,&quot;640&quot;:&quot;https:\/\/scontent.cdninstagram.com\/v\/t51.29350-15\/405496261_666372972335428_4891701044813203481_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=SE6WK-6zM1gAX-0tQXQ&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDkAH3CbxzIYqpQ_ILUBWpAXCiRfofZLptwlmhQjd4hTQ&amp;oe=6589CFCC&quot;}">
+<span class="sbi-screenreader">5 Protect-Your-Peace Permission Slips for December</span>
+<svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+</svg> <img src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="5 Protect-Your-Peace Permission Slips for December (take what you need…)
+
+• While you’re grieving, don&#039;t expect yourself to celebrate the way you did in the past.
+
+• While you’re going through crisis, don’t expect yourself to be everyone else’s first responder.
+
+• While you’re adjusting to a new normal, don’t expect yourself to know the ropes.
+
+• While you’re setting healthy boundaries, don’t expect yourself to get anyone else’s approval.
+
+• While you’re dealing with a crappy situation, don’t expect yourself to find the “silver lining”.
+
+My friend, you are NOT obligated to carry unreasonable expectations along with everything else you&#039;re holding this December.
+
+What you carry is already heavy enough.
+
+What you ARE is already worthy.
+
+YOU are worthy of protecting your peace this December.
+
+My hand in yours,
+Rachel
+
+📚 These permissions, along with many more, can be found in my most recent book #SoulShift - thank you for supporting my work.
+
+❓Friends, what permission slip speaks to you? What would you add to the list?">
+</a>
+</div>
+</div> </div>
+<div id="sbi_load">
+</div>
+<span class="sbi_resized_image_data" data-feed-id="*1" data-resized="{&quot;17996585918124262&quot;:{&quot;id&quot;:&quot;405496261_666372972335428_4891701044813203481_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18033728635647847&quot;:{&quot;id&quot;:&quot;405502689_1423136834936771_388734483778818316_n&quot;,&quot;ratio&quot;:&quot;0.80&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17963892536660036&quot;:{&quot;id&quot;:&quot;407975957_1498324294282243_2672107684933795389_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18010711511079631&quot;:{&quot;id&quot;:&quot;407771484_870560721410234_4979316447760868272_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17856923238069489&quot;:{&quot;id&quot;:&quot;409761516_7011695932184227_278794191240106703_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18110789953345977&quot;:{&quot;id&quot;:&quot;410088648_842132204368592_4355442247583837625_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18053933269509017&quot;:{&quot;id&quot;:&quot;410197062_1362255177997947_5970863485547278627_n&quot;,&quot;ratio&quot;:&quot;1.36&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18063026902470497&quot;:{&quot;id&quot;:&quot;411984875_336566249306113_4289836074249695950_n&quot;,&quot;ratio&quot;:&quot;0.95&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18015906674002441&quot;:{&quot;id&quot;:&quot;412043091_382541550803781_6123351647763987863_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}}}">
+</span>
+</div>
+</div>
+</div></section>
+</div></div></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap"><div class="social-footer"><section id="simple-social-icons-4" class="widget simple-social-icons"><div class="widget-wrap"><ul class="aligncenter"><li class="ssi-email"><a href="https://www.handsfreemama.com/contact/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-email" aria-labelledby="social-email-4"><title id="social-email-4">Email</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-email"></use></svg></a></li><li class="ssi-facebook"><a href="https://www.facebook.com/TheHandsFreeRevolution" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-facebook" aria-labelledby="social-facebook-4"><title id="social-facebook-4">Facebook</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-facebook"></use></svg></a></li><li class="ssi-instagram"><a href="https://www.instagram.com/handsfreerevolution/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-instagram" aria-labelledby="social-instagram-4"><title id="social-instagram-4">Instagram</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-instagram"></use></svg></a></li><li class="ssi-pinterest"><a href="https://www.pinterest.com/handsfreemama/" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-pinterest" aria-labelledby="social-pinterest-4"><title id="social-pinterest-4">Pinterest</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-pinterest"></use></svg></a></li><li class="ssi-rss"><a href="http://feeds.feedburner.com/handsfreemama" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-rss" aria-labelledby="social-rss-4"><title id="social-rss-4">RSS</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-rss"></use></svg></a></li><li class="ssi-twitter"><a href="https://twitter.com/handsfreemama" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-twitter" aria-labelledby="social-twitter-4"><title id="social-twitter-4">Twitter</title><use xlink:href="https://www.handsfreemama.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-twitter"></use></svg></a></li></ul></div></section>
+</div><div class="creds"><p>Copyright &copy; 2023 &middot; <a target="_blank" href="https://www.handsfreemama.com/">Hands Free Mama</a> by <a target="_blank" href="http://www.bloggerboutique.com">Blogger Boutique</a> &middot; Header photos by <a target="_blank" href="http://www.amy-paulson.com/">Amy Paulson</a></p></div><p></p></div></footer></div>
+<script type="text/javascript">
+var sbiajaxurl = "https://www.handsfreemama.com/wp-admin/admin-ajax.php";
+</script>
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><style type="text/css" media="screen">#simple-social-icons-3 ul li a, #simple-social-icons-3 ul li a:hover, #simple-social-icons-3 ul li a:focus { background-color: #5db5a9 !important; border-radius: 30px; color: #ffffff !important; border: 0px #FFFFFF solid !important; font-size: 18px; padding: 9px; }  #simple-social-icons-3 ul li a:hover, #simple-social-icons-3 ul li a:focus { background-color: #c6533f !important; border-color: #FFFFFF !important; color: #ffffff !important; }  #simple-social-icons-3 ul li a:focus { outline: 1px dotted #c6533f !important; } #simple-social-icons-2 ul li a, #simple-social-icons-2 ul li a:hover, #simple-social-icons-2 ul li a:focus { background-color: #5db5a9 !important; border-radius: 30px; color: #ffffff !important; border: 0px #FFFFFF solid !important; font-size: 18px; padding: 9px; }  #simple-social-icons-2 ul li a:hover, #simple-social-icons-2 ul li a:focus { background-color: #c6533f !important; border-color: #FFFFFF !important; color: #ffffff !important; }  #simple-social-icons-2 ul li a:focus { outline: 1px dotted #c6533f !important; } #simple-social-icons-4 ul li a, #simple-social-icons-4 ul li a:hover, #simple-social-icons-4 ul li a:focus { background-color: #5db5a9 !important; border-radius: 30px; color: #ffffff !important; border: 0px #FFFFFF solid !important; font-size: 18px; padding: 9px; }  #simple-social-icons-4 ul li a:hover, #simple-social-icons-4 ul li a:focus { background-color: #c6533f !important; border-color: #FFFFFF !important; color: #ffffff !important; }  #simple-social-icons-4 ul li a:focus { outline: 1px dotted #c6533f !important; }</style>
+<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.handsfreemama.com\/2023\/12\/14\/insights-found-in-tupperware-bowls-and-survey-boxes-may-influence-your-holidays\/":9762,"https:\/\/www.handsfreemama.com\/2023\/11\/16\/if-youve-got-a-cherished-dream-shoved-in-a-drawer-please-give-it-fresh-air\/":9738,"https:\/\/www.handsfreemama.com\/2023\/10\/20\/toxic-regret-when-signs-point-to-finally-forgiving-yourself\/":9726,"https:\/\/www.handsfreemama.com\/2023\/09\/08\/a-simple-art-project-that-improves-your-inner-world-no-artistic-skills-required\/":9717,"https:\/\/www.handsfreemama.com\/2023\/08\/25\/i-hope-you-feel-small-the-surprising-upside-of-unselfing\/":9683,"https:\/\/www.handsfreemama.com\/2023\/08\/04\/how-a-wonder-window-became-my-calm-after-the-storm\/":9665};
+	</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=249643311490&version=v2.3'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+<script>
+			document.body.addEventListener( 'is.post-load', function() {
+				if ( 'undefined' !== typeof FB ) {
+					FB.XFBML.parse();
+				}
+			} );
+			</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script type="text/javascript">
+				( function () {
+					// Pinterest shared resources
+					var s = document.createElement( 'script' );
+					s.type = 'text/javascript';
+					s.async = true;
+					s.setAttribute( 'data-pin-hover', true );					s.src = window.location.protocol + '//assets.pinterest.com/js/pinit.js';
+					var x = document.getElementsByTagName( 'script' )[ 0 ];
+					x.parentNode.insertBefore(s, x);
+					// if 'Pin it' button has 'counts' make container wider
+					function init() {
+						var shares = document.querySelectorAll( 'li.share-pinterest' );
+						for ( var i = 0; i < shares.length; i++ ) {
+							var share = shares[ i ];
+							var countElement = share.querySelector( 'a span' );
+							if (countElement) {
+								var countComputedStyle = window.getComputedStyle(countElement);
+								if ( countComputedStyle.display === 'block' ) {
+									var countWidth = parseInt( countComputedStyle.width, 10 );
+									share.style.marginRight = countWidth + 11 + 'px';
+								}
+							}
+						}
+					}
+
+					if ( document.readyState !== 'complete' ) {
+						document.addEventListener( 'load', init );
+					} else {
+						init();
+					}
+				} )();
+			</script>
+<script type="text/javascript">
+				( function () {
+					var currentScript = document.currentScript;
+
+					// Helper function to load an external script.
+					function loadScript( url, cb ) {
+						var script = document.createElement( 'script' );
+						var prev = currentScript || document.getElementsByTagName( 'script' )[ 0 ];
+						script.setAttribute( 'async', true );
+						script.setAttribute( 'src', url );
+						prev.parentNode.insertBefore( script, prev );
+						script.addEventListener( 'load', cb );
+					}
+
+					function init() {
+						loadScript( 'https://platform.linkedin.com/in.js?async=true', function () {
+							if ( typeof IN !== 'undefined' ) {
+								IN.init();
+							}
+						} );
+					}
+
+					if ( document.readyState === 'loading' ) {
+						document.addEventListener( 'DOMContentLoaded', init );
+					} else {
+						init();
+					}
+
+					document.body.addEventListener( 'is.post-load', function() {
+						if ( typeof IN !== 'undefined' ) {
+							IN.parse();
+						}
+					} );
+				} )();
+			</script>
+<script id="tumblr-js" type="text/javascript" src="https://assets.tumblr.com/share-button.js"></script>
+<script type="text/javascript" src="https://app.clickfunnels.com/assets/cfpop.js?ver=1.0.0" id="cf_clickpop-js"></script>
+<script type="text/javascript" id="jpibfi-script-js-extra">
+/* <![CDATA[ */
+var jpibfi_options = {"hover":{"siteTitle":"Hands Free Mama","image_selector":"div.jpibfi_container img","disabled_classes":"nopin;wp-smiley","enabled_classes":"","min_image_height":300,"min_image_height_small":300,"min_image_width":300,"min_image_width_small":300,"show_on":"[front],[single],[page],[category],[archive],[search],[home]","disable_on":",7215,9004,9105,9542,9587","show_button":"hover","button_margin_bottom":20,"button_margin_top":20,"button_margin_left":20,"button_margin_right":20,"button_position":"top-left","description_option":["post_title"],"transparency_value":0.5,"pin_image":"custom","pin_image_button":"square","pin_image_icon":"circle","pin_image_size":"normal","custom_image_url":"https:\/\/www.handsfreemama.com\/wp-content\/uploads\/2013\/11\/pinterest.png","scale_pin_image":false,"pin_linked_url":true,"pinLinkedImages":false,"pinImageWidth":80,"pinImageHeight":80,"scroll_selector":"","support_srcset":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/jquery-pin-it-button-for-images/js/jpibfi.client.js?ver=3.0.6" id="jpibfi-script-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/jquery.scrollTo.min.js?ver=1.4.5-beta" id="scrollTo-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/jquery.localScroll.min.js?ver=1.2.8b" id="localScroll-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/fadeup.js?ver=1.0.0" id="market-fadeup-script-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/jquery.matchHeight-min.js?ver=1.0.0" id="match-height-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/matchheight-init.js?ver=1.0.0" id="match-height-init-js"></script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/themes/restored316-market/js/singular.js?ver=6.3.2" id="singular-js"></script>
+<script defer type="text/javascript" src="https://stats.wp.com/e-202351.js" id="jetpack-stats-js"></script>
+<script id="jetpack-stats-js-after" type="text/javascript">
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'18569351',post:'7179',tz:'-6',srv:'www.handsfreemama.com',j:'1:12.7.1'} ]);
+_stq.push([ "clickTrackerInit", "18569351", "7179" ]);
+</script>
+<script type="text/javascript" id="sbi_scripts-js-extra">
+/* <![CDATA[ */
+var sb_instagram_js_options = {"font_method":"svg","resized_url":"https:\/\/www.handsfreemama.com\/wp-content\/uploads\/sb-instagram-feed-images\/","placeholder":"https:\/\/www.handsfreemama.com\/wp-content\/plugins\/instagram-feed\/img\/placeholder.png","ajax_url":"https:\/\/www.handsfreemama.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.2.6" id="sbi_scripts-js"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.handsfreemama.com/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=12.7.1" id="sharing-js-js"></script>
+<script id="sharing-js-js-after" type="text/javascript">
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+</body></html>
+
+
